@@ -171,7 +171,6 @@ body {
     left: -200vw;
 }
 
-
 #conocenos_sec {
     width: 70%;
     margin: auto;
@@ -200,10 +199,8 @@ h2 {
     width: 50%;
 }
 
-
-
 .def_sec {
     padding: 20px;
-    width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
-    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    width: 100%; 
+    box-sizing: border-box; 
 }
