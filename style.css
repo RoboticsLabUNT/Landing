@@ -170,3 +170,40 @@ body {
 .slider input:nth-child(3):checked ~ .content {
     left: -200vw;
 }
+
+
+#conocenos_sec {
+    width: 70%;
+    margin: auto;
+    padding: 15px;
+}
+
+#nosotros_label {
+    color: #434343;
+}
+
+#sec_defin {
+    margin: auto;
+}
+
+h2 {
+    color: #6a004f;
+}
+
+.mini_seccion {
+    display: flex;
+    flex-direction: row;
+}
+
+.micro_seccion {
+    padding: 20px;
+    width: 50%;
+}
+
+
+
+.def_sec {
+    padding: 20px;
+    width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
