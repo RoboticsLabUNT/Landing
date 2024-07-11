@@ -68,5 +68,5 @@ document.addEventListener('DOMContentLoaded', function () {
                 overlay.remove(); // Eliminar el elemento del DOM después de la transición
             }, 500); // Espera 0.5 segundos para que termine la transición
         }
-    }, 2000); // 2000 milisegundos = 2 segundos, ajusta aquí el tiempo de espera antes de mostrar la superposición
+    }, 200000); // 2000 milisegundos = 2 segundos, ajusta aquí el tiempo de espera antes de mostrar la superposición
 });

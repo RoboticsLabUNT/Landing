@@ -231,11 +231,6 @@ body {
     left: -200vw;
 }
 
-#conocenos_sec {
-    width: 70%;
-    margin: auto;
-    padding: 15px;
-}
 
 #sec_defin {
     margin: auto;
@@ -266,7 +261,7 @@ h2 {
 }
 
 
-#equipo_sec{
+.seccion{
     width: 70%;
     margin: auto;
     padding: 15px;
@@ -484,4 +479,28 @@ h6{
     padding-bottom: 45px;
 }
 
+#proyectos_sec{
+    padding: 20px;
+}
 
+#publicaciones_sec{
+    padding: 20px;
+}
+
+#cursos_sec{
+    padding: 20px;
+}
+
+.estamos_trabajando{
+    padding: 20px;
+    height: 200px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.estamos_trabajando img{
+    height: 100%;
+    width: auto;
+}
