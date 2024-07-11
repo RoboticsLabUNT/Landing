@@ -117,7 +117,7 @@ body {
     width: 300vw;
     height: 400px; /* Altura fija del contenido */
     display: flex;
-    transition: 400ms ease-in-out;
+    transition: left 1s ease-in-out;
 }
 
 #firstslide, #secondslide, #thirdslide {
