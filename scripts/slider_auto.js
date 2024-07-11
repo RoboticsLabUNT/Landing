@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Función para iniciar el carrusel automático
     function startCarousel() {
-        setInterval(nextSlide, 5000); // Cambia cada 2 segundos (2000 milisegundos)
+        setInterval(nextSlide, 6000); // Cambia cada 2 segundos (2000 milisegundos)
     }
 
     // Inicia el carrusel automático cuando se carga completamente el DOM

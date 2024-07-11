@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+html {
+    scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+#conocenos_sec, #equipo_sec, #actividad_sec {
+    scroll-margin-top: 80px; /* Ajusta el valor según la altura de tu header */
+}
 
 * {
     box-sizing: border-box;
@@ -19,7 +26,22 @@ body {
     align-items: center;
     height: 85px;
     padding: 5px 10%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+    z-index: 1000; /* Asegura que el encabezado esté por encima del resto del contenido */
 }
+
+.header.transparent {
+    background-color: transparent;
+}
+
+.header:hover {
+    background-color: #04285b; /* Restablece el color original al pasar el cursor */
+}
+
 
 .header .logo {
     cursor: pointer;
@@ -81,6 +103,8 @@ body {
     height: 400px; /* Altura fija del carrusel */
     background-color: black;
     overflow: hidden; /* Oculta cualquier contenido que sobresalga */
+    margin-top: 85px; /* Añade espacio para el encabezado fijo */
+    z-index: 900; /* Asegura que el carrusel esté por encima del encabezado */
 }
 
 .slider input {
