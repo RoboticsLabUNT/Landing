@@ -531,10 +531,19 @@ h6{
     padding: 20px;
 }
 
+#postulacion_voluntariado{
+    display: flex;
+    flex-direction: column;
+}
+
+#postulacion_voluntariado p{
+    font-size: 15px;
+    padding: 20px;
+}
+
 .btn_voluntariado {
-    height: 300px; /* Ocupa el 30% de la altura del contenedor padre */
+    max-height: 300px; /* Altura máxima del botón */
     width: 100%; /* Ocupa todo el ancho disponible */
-    top: 5%;
     position: relative;
     overflow: hidden;
     display: flex; /* Usa flexbox para alinear la imagen */
@@ -544,8 +553,10 @@ h6{
 }
 
 .btn_voluntariado img {
-    height: 100%;
-    width: auto; /* Mantén la proporción original */
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+    max-height: 100%; /* Asegura que la imagen no exceda la altura máxima del botón */
+    width: auto; /* Ajusta el ancho automáticamente */
+    height: auto; /* Ajusta la altura automáticamente */
     vertical-align: middle; /* Alinea verticalmente la imagen */
 }
 
@@ -558,3 +569,4 @@ h6{
     transform: scale(1); /* Vuelve al tamaño original al quitar el hover */
     opacity: 1; /* Vuelve a la opacidad original al quitar el hover */
 }
+
