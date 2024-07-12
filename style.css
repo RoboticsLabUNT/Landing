@@ -3,7 +3,7 @@ html {
     scroll-behavior: smooth; /* Desplazamiento suave */
 }
 
-#conocenos_sec, #equipo_sec, #actividad_sec ,#proyectos_sec, #publicaciones_sec, #cursos_sec, #eventos_sec, #voluntariado_sec{
+#conocenos_sec, #equipo_sec, #actividad_sec ,#proyectos_sec, #publicaciones_sec, #cursos_sec, #eventos_sec, #voluntariado_sec, #contac_seccion{
     scroll-margin-top: 80px; /* Ajusta el valor según la altura de tu header */
 }
 
