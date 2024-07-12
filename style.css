@@ -30,7 +30,7 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+    transition: opacity 0.3s ease-in-out; /* Transición suave para el color de fondo */
     z-index: 1000; /* Asegura que el encabezado esté por encima del resto del contenido */
 }
 
