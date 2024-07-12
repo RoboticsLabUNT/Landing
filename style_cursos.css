@@ -1,0 +1,147 @@
+
+.card_evento {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 15px;
+}
+
+.card_evento .card_landing_1,
+.card_evento .card_landing_2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px #000;
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+}
+
+.card_landing_1{
+    background-image: url(./sources/portada_preliminar.png);
+}
+
+.card_landing_2{
+    background-image: url(https://scontent.ftru1-1.fna.fbcdn.net/v/t39.30808-6/441503398_969244381871402_1186449551589878895_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEgrvI6bhGk-bnZBKiZU6EgK3Tw-vSH7psrdPD69Ifum-sSN_xdW4U_Ug18CVIi7-ghvzua_Jklvkbn_PnOyKZN&_nc_ohc=AWMSu0uuBp0Q7kNvgHBz9j3&_nc_ht=scontent.ftru1-1.fna&oh=00_AYAv2LVrLV9eYehWIecJm-B20xVoihETY5tuynteNV0FCw&oe=6696A1A6);
+}
+
+.card_evento .card_landing_1 h6,
+.card_evento .card_landing_2 h6 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    color: #e68bff;
+    text-shadow: 
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black,
+    -3px -3px 0 black,
+    3px -3px 0 black,
+    -3px 3px 0 black,
+    3px 3px 0 black;
+}
+
+.card_evento .card_info {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 15px;
+    background: #fff;
+    z-index: 90;
+    box-shadow: 0 5px 10px #000;
+    transition: .5s;
+}
+
+.card_evento:hover .card_info {
+    left: 100%;
+}
+
+.card_info .head {
+    padding: 5px 0;
+    border-bottom: solid 1px #e68bff;
+}
+
+.card_info .head .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #e68bff;
+}
+
+.card_info .head .description {
+    display: flex;
+    gap: 10px;
+}
+
+.card_info .head .description .item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.card_info .head .description .item i {
+    color: #e68bff;
+    font-size: 15px;
+}
+
+.card_info .head .description .item p {
+    font-size: 13px;
+}
+
+.card_info .content_evento {
+    margin-top: 15px;
+}
+
+.card_info .content_evento .list {
+    padding: 10px 15px;
+}
+
+.card_info .content_evento .list li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card_info .action .btn_evento {
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    background: #e68bff;
+    display: block;
+    margin-top: 10px;
+}
+
+.descrip_evento{
+    font-size: 13px;
+}
+
+.action{
+    position: absolute;
+    width: 85%;
+    bottom: 20px;
+    text-align: center; 
+}
+
+#tarjetas_eventos{
+    display: flex;
+    justify-content: space-around; 
+}
+
+#card_evento_1{
+    z-index: 100;
+}
+
+#card_evento_2{
+    z-index: 70;
+}
+
+
