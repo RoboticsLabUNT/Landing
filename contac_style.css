@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 50px ;
+    padding-bottom: 50px;
 }
 
 .contact {
@@ -12,12 +12,12 @@
     display: flex;
     border-radius: 30px;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra para un efecto visual */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .contact__image-wrapper {
     width: 50%;
-    height: 100%;
+    height: 100%; /* Altura inicial del 100% */
     overflow: hidden;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -31,18 +31,39 @@
 
 .contact__right-side {
     width: 50%;
-    height: 100%;
+    height: 100%; /* Altura inicial del 100% */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #f9f9f9; /* Color de fondo para el lado del formulario */
-    overflow-y: auto; /* Añade desplazamiento interno si el contenido excede */
+    background-color: #f9f9f9;
+    overflow-y: auto;
 }
 
 #formulario {
     width: 100%;
     height: 100%;
     border: none;
+}
+
+/* Media query para pantallas menores a 1220px */
+@media (max-width: 1220px) {
+    .contact {
+        flex-direction: column; /* Apila los elementos uno encima del otro */
+        height: auto; /* Altura automática para adaptarse al contenido */
+    }
+    #contac_seccion {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .contact__image-wrapper,
+    .contact__right-side {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        height: 500px; /* Altura fija de 500px para cada elemento */
+        border-radius: 0; /* Quita los bordes redondeados al apilarlos */
+    }
 }
