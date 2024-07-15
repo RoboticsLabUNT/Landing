@@ -19,217 +19,6 @@ body {
     background-color: #fff;
 }
 
-.header {
-    background-color: #04285b;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 85px;
-    padding: 5px 10%;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    transition: opacity 0.3s ease-in-out; /* Transición suave para el color de fondo */
-    z-index: 1000; /* Asegura que el encabezado esté por encima del resto del contenido */
-}
-
-.header.transparent {
-    background-color: transparent;
-}
-
-.header:hover {
-    background-color: #04285b; /* Restablece el color original al pasar el cursor */
-}
-
-
-.header .logo {
-    cursor: pointer;
-}
-
-.header .logo img {
-    height: 70px;
-    width: auto;
-    transition: all 0.3s;
-}
-
-.header .logo img:hover {
-    transform: scale(1.2);
-}
-
-.header .nav-links {
-    list-style: none;
-}
-
-.header .nav-links li {
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.header .nav-links li:hover {
-    transform: scale(1.1);
-}
-
-.header .nav-links a {
-    font-weight: 700;
-    color: #eceff1;
-    text-decoration: none;
-}
-
-.header .nav-links li a:hover {
-    color: #e68bff;
-}
-
-.header .btn_ct button {
-    font-weight: 700;
-    color: #1b3039;
-    padding: 9px 25px;
-    background: #eceff1;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-.header .btn_ct button:hover {
-    background-color: #e2f1f8;
-    color: #e68bff;
-    transform: scale(1.1);
-}
-
-/* Estilo para el contenedor del menú desplegable */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Estilo para el contenido del menú desplegable */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #04285b82;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Estilo para los enlaces del menú desplegable */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Mostrar el menú desplegable cuando se pase el cursor sobre el botón */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Cambiar el color de fondo de los enlaces al pasar el cursor */
-.dropdown-content a:hover {
-    background-color: #00122c82;
-}
-
-
-
-.container {
-    position: relative;
-    width: 100%;
-    height: 400px; /* Altura fija del carrusel */
-    background-color: black;
-    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
-    margin-top: 85px; /* Añade espacio para el encabezado fijo */
-    z-index: 900; /* Asegura que el carrusel esté por encima del encabezado */
-}
-
-.slider input {
-    visibility: hidden;
-    display: none;
-}
-
-.buttons {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    bottom: 10px; /* Ajusta la posición de los botones */
-    gap: 10px;
-}
-
-.buttons label {
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    opacity: 0.5;
-    cursor: pointer;
-    z-index: 1;
-    transition: 300ms ease-in-out;
-}
-
-.buttons label:hover {
-    transform: scale(1.2);
-    opacity: 1;
-}
-
-.content {
-    position: relative;
-    width: 300vw;
-    height: 400px; /* Altura fija del contenido */
-    display: flex;
-    transition: left 1s ease-in-out;
-}
-
-#firstslide, #secondslide, #thirdslide {
-    position: relative;
-    width: 100vw;
-    height: 400px; /* Altura fija de cada slide */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#firstslide {
-    background-image: url(./sources/foto1.webp);
-    background-size: cover; /* Ajusta el tamaño para cubrir completamente el div */
-    background-position: center; /* Centra la imagen dentro del div */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#secondslide {
-    background-image: url(./sources/foto2.webp);
-    background-size: cover; /* Ajusta el tamaño para cubrir completamente el div */
-    background-position: center; /* Centra la imagen dentro del div */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#thirdslide {
-    background-image: url(./sources/foto3.webp);
-    background-size: cover; /* Ajusta el tamaño para cubrir completamente el div */
-    background-position: center; /* Centra la imagen dentro del div */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slider input:nth-child(1):checked ~ .content {
-    left: 0;
-}
-
-.slider input:nth-child(2):checked ~ .content {
-    left: -100vw;
-}
-
-.slider input:nth-child(3):checked ~ .content {
-    left: -200vw;
-}
 
 
 #sec_defin {
@@ -246,6 +35,7 @@ h2 {
 
 .mini_seccion {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 }
 
@@ -253,6 +43,17 @@ h2 {
     padding: 20px;
     width: 50%;
     height: auto;
+}
+
+@media (max-width: 785px) {
+    .mini_seccion {
+        flex-direction: column; /* Cambia a orientación vertical */
+        align-items: center; /* Centra los elementos verticalmente */
+    }
+
+    .micro_seccion {
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
 }
 
 .def_sec {

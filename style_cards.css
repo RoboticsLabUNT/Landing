@@ -16,13 +16,13 @@
     transition: 300ms;
     position: relative; /* Asegura que los elementos hijos se posicionen correctamente */
     display: flex;
-    flex-direction: column; /* Asegura que el contenido interno se alinee en columna */
+    flex-direction: column; /* Asegura que el conenido interno se alinee en columna */
     margin-top: 90px; /* Añade margen superior para separar las tarjetas */
 }
 
 .personaje, .personaje_2, .personaje_3, .personaje_4, .personaje_5 {
     height: 350px;
-    width: 100%; /* Asegura que tome el 100% del ancho del contenedor padre */
+    width: 100%; /* Asegura que tome el 100% del ancho del conenedor padre */
     display: flex;
     justify-content: center;
     align-items: center;
