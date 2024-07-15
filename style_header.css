@@ -1,3 +1,4 @@
+/* Estilos existentes */
 .header {
     background-color: #04285b;
     display: flex;
@@ -9,8 +10,8 @@
     width: 100%;
     top: 0;
     left: 0;
-    transition: opacity 0.3s ease-in-out; /* Transición suave para el color de fondo */
-    z-index: 1000; /* Asegura que el encabezado esté por encima del resto del contenido */
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1000;
 }
 
 .header.transparent {
@@ -18,9 +19,8 @@
 }
 
 .header:hover {
-    background-color: #04285b; /* Restablece el color original al pasar el cursor */
+    background-color: #04285b;
 }
-
 
 .header .logo {
     cursor: pointer;
@@ -76,13 +76,11 @@
     transform: scale(1.1);
 }
 
-/* Estilo para el contenedor del menú desplegable */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* Estilo para el contenido del menú desplegable */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -92,7 +90,6 @@
     z-index: 1;
 }
 
-/* Estilo para los enlaces del menú desplegable */
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -100,12 +97,74 @@
     display: block;
 }
 
-/* Mostrar el menú desplegable cuando se pase el cursor sobre el botón */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Cambiar el color de fondo de los enlaces al pasar el cursor */
 .dropdown-content a:hover {
     background-color: #00122c82;
+}
+
+/* Estilos responsivos */
+@media (max-width: 950px) {
+    .header {
+        justify-content: space-between;
+    }
+    .nav-links {
+        display: none;
+    }
+    .btn_ct {
+        display: none;
+    }
+    .header .menu-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: #eceff1;
+    }
+}
+
+@media (max-width: 950px) {
+    .side-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        background-color: #04285b;
+        z-index: 1001;
+        padding-top: 60px;
+        transition: 0.3s;
+    }
+    .side-menu a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #eceff1;
+        display: block;
+        transition: 0.3s;
+    }
+    .side-menu a:hover {
+        color: #e68bff;
+    }
+    .side-menu .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        font-size: 36px;
+    }
+    .open-side-menu {
+        display: block;
+    }
+}
+
+/* Estilo para el botón de menú */
+.menu-toggle {
+    display: none;
+}
+
+/* Estilo para abrir el menú lateral */
+.open-side-menu {
+    display: block;
 }
