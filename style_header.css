@@ -85,6 +85,10 @@
     transform: scale(1.1);
 }
 
+.menu-toggle{
+    display: none;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
