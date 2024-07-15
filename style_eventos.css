@@ -156,7 +156,7 @@
 
 @media screen and (max-width: 850px) {
     .card_evento:hover .card_info {
-        top: 147%; /* Despliega la card_info hacia abajo */
+        top: 145%; /* Despliega la card_info hacia abajo */
         left: 0; /* Asegura que la card_info no se desplace a la derecha en lugar de abajo */
     }
 }
