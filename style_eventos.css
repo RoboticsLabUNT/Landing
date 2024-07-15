@@ -132,8 +132,11 @@
 }
 
 #tarjetas_eventos{
-    display: flex;
-    justify-content: space-around; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px;
+    justify-items: center; /* Centra las tarjetas horizontalmente */
 }
 
 #card_evento_1{
@@ -145,3 +148,15 @@
 }
 
 
+@media screen and (max-width: 1230px) {
+    #tarjetas_eventos {
+        grid-template-columns: 1fr; /* Cambia a una columna cuando la pantalla sea menor a 1230px */
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .card_evento:hover .card_info {
+        top: 147%; /* Despliega la card_info hacia abajo */
+        left: 0; /* Asegura que la card_info no se desplace a la derecha en lugar de abajo */
+    }
+}
